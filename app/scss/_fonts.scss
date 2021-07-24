@@ -1,0 +1,27 @@
+@import "_mixins/font-face";
+
+@font-face {
+	font-family: "FreeSet";
+	src: url("../fonts/freeset/freeset.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/freeset/freeset.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/freeset/freeset.otf") format("opentype"), /* Open Type Font */
+		url("../fonts/freeset/freeset.svg") format("svg"), /* Legacy iOS */
+		url("../fonts/freeset/freeset.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/freeset/freeset.woff") format("woff"), /* Modern Browsers */
+		url("../fonts/freeset/freeset.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FreeSet";
+	src: url("../fonts/freeset-bold/freeset-bold.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/freeset-bold/freeset-bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/freeset-bold/freeset-bold.otf") format("opentype"), /* Open Type Font */
+		url("../fonts/freeset-bold/freeset-bold.svg") format("svg"), /* Legacy iOS */
+		url("../fonts/freeset-bold/freeset-bold.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/freeset-bold/freeset-bold.woff") format("woff"), /* Modern Browsers */
+		url("../fonts/freeset-bold/freeset-bold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 700;
+	font-style: normal;
+}

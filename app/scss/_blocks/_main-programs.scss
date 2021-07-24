@@ -1,0 +1,20 @@
+.main-programs {
+	padding: 60px 0;
+	background: #F1F8F8;
+
+	&__list {
+		margin-top: 4px;
+	}
+
+	&__item {
+		margin-top: 20px;
+	}
+
+
+}
+
+@include media-breakpoint-down(md) {
+	.main-programs {
+		padding: 40px 0;
+	}
+}

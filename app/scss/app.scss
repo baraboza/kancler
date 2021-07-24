@@ -1,0 +1,27 @@
+@use 'sass:math';
+
+@import "vars";
+@import "reset";
+@import "libs";
+@import "mixins";
+@import "fonts";
+@import "common";
+@import "text";
+@import "grid";
+@import "svg";
+
+// "мелкие" блоки (могут миксоваться с элементами других блоков, поэтому должны идти раньше для возможности переопределения их стилей)
+@import "_blocks/button";
+@import "_blocks/square-button";
+@import "_blocks/select";
+@import "_blocks/input";
+@import "_blocks/program-card";
+@import "_blocks/offer-card";
+@import "_blocks/news-card";
+
+// "крупные" блоки
+@import "_blocks/header";
+@import "_blocks/main-hero";
+@import "_blocks/main-programs";
+@import "_blocks/main-offers";
+@import "_blocks/main-news";

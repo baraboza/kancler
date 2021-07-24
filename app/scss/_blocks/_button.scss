@@ -1,0 +1,26 @@
+.button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 4px 15px;
+	border-radius: 5px;
+	border: 1px solid #0050A2;
+	background: #0050A2;
+	color: #fff;
+	font-size: 14px;
+	line-height: 22px;
+	cursor: pointer;
+	transition-property: background-color, border-color, color;
+	transition-duration: 0.3s;
+
+	&--yellow {
+		background: #FFB424;
+		border-color: #FFB424;
+		color: #262626;
+	}
+
+	svg {
+		margin-right: 8px;
+	}
+}

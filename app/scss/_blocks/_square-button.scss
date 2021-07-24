@@ -1,0 +1,8 @@
+.square-button {
+	@include flex-center;
+	width: 32px;
+	height: 32px;
+	background: #FFFFFF;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08);
+	border-radius: 5px;
+}

@@ -1,0 +1,73 @@
+.program-card {
+	background: #FFFFFF;
+	box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.03);
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	transition: background-color 0.3s;
+
+	&:hover {
+		background: #0050A2;
+
+		.program-card {
+			&__title,
+			&__descr {
+				color: #fff;
+			}
+
+			&__button {
+				background-color: #fff;
+				border-color: #fff;
+				color: #262626;
+			}
+		}
+	}
+
+	&__img-box {
+		@include img-box-ratio(math.div(154, 285));
+	}
+
+	&__content {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		padding: 16px 32px 32px;
+	}
+
+	&__text {
+		line-height: 24px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	&__title,
+	&__descr {
+		transition: color 0.3s;
+	}
+
+	&__title {
+		font-weight: 700;
+	}
+
+	&__descr {
+		font-size: 14px;
+		color: #8C8C8C;
+		margin-top: 8px;
+		margin-bottom: auto;
+	}
+
+	&__button {
+		margin-top: 16px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.program-card {
+
+		&__content {
+			padding: 10px 15px;
+		}
+	}
+}
