@@ -1,8 +1,6 @@
-import Inputmask from 'inputmask';
 import Select from './modules/Select';
 
 $(function() {
-	Inputmask("+7 (999) 999-99-99").mask('input[type=tel]');
 	
 	$('.js-scroll-link').click(function(e) {
 		e.preventDefault();
