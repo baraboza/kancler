@@ -1,0 +1,37 @@
+.text {
+	margin-top: 26px;
+	margin-bottom: 26px;
+	font-size: 16px;
+	line-height: 22px;
+	max-width: 791px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	ul, ol, p {
+
+		&:nth-child(n + 2) {
+			margin-top: 22px;
+		}
+	}
+
+	ul {
+
+		> li {
+
+			&::before {
+				content: '∙ ';
+				color: #0050A2;
+			}
+		}
+	}
+
+	a {
+		color: #0050A2;
+	}
+}

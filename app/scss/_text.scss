@@ -8,8 +8,42 @@
 	}
 }
 
+.h2 {
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 33px;
+	margin-top: 32px;
+	margin-bottom: 26px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		margin-top: 12px;
+		height: 3px;
+		width: 80px;
+		background: #FFB424;
+	}
+}
+
 @include media-breakpoint-down(md) {
 	.title-main {
 		font-size: 20px;
+	}
+
+	.h2 {
+		font-size: 20px;
+		line-height: 22px;
+
+		&::after {
+			margin-top: 8px;
+		}
 	}
 }

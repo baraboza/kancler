@@ -1,0 +1,130 @@
+.side {
+
+	&__menu {
+		border-radius: 5px;
+		border: 1px solid #EEEEEE;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	&__menu-item {
+
+		&:nth-child(n + 2) {
+			border-top: 1px solid #EEEEEE;
+		}
+
+		a {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			padding: 18px 10px 18px 16px;
+			transition: 0.3s;
+
+			&::after {
+				content: '';
+				width: 16px;
+				height: 16px;
+				margin-top: 1px;
+				margin-left: 12px;
+				flex-shrink: 0;
+				background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 7.5L7 9.66506L7 5.33494L10 7.5Z' fill='%23262626'/%3E%3C/svg%3E%0A");
+			}
+
+			&:hover {
+				background-color: #EEEEEE;
+			}
+
+			&.--active {
+				color: #0050A2;
+			}
+		}
+	}
+
+	&__contacts {
+		margin-top: 32px;
+		display: block;
+		border-radius: 5px;
+		border: 1px solid #EEEEEE;
+		background-image: url('../img/side-contacts.jpg');
+		background-size: cover;
+		background-position: 50%;
+		padding: 29px 25px 25px;
+	}
+
+	&__contacts-title {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	&__contacts-descr {
+		margin-top: 8px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	&__buttons {
+		margin-top: 32px;
+		border-radius: 5px;
+		border: 1px solid #EEEEEE;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	&__buttons-item {
+
+		&:nth-child(n + 2) {
+			border-top: 1px solid #EEEEEE;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			padding: 17px 16px;
+		}
+
+		svg {
+			margin-right: 16px;
+			flex-shrink: 0;
+		}
+	}
+
+	&__articles {
+		margin-top: 32px;
+	}
+
+	&__articles-title {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	&__articles-list {
+		margin-top: -8px;
+	}
+
+	&__articles-item {
+		margin-top: 32px;
+	}
+
+	&__articles-item-box {
+		display: block;
+		border: 1px solid #EEEEEE;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	&__articles-img-box {
+		@include img-box-ratio(math.div(180, 286));
+	}
+
+	&__articles-item-content {
+		padding: 16px;
+	}
+
+	&__articles-item-title {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 22px;
+	}
+}

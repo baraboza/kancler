@@ -1,4 +1,4 @@
-.input {
+.input, .textarea {
 	width: 100%;
 	padding: 0 12px;
 	height: 38px;
@@ -10,4 +10,11 @@
 	&::placeholder {
 		color: #8C8C8C;
 	}
+}
+
+.textarea {
+	height: 150px;
+	resize: none;
+	padding: 12px;
+	line-height: 22px;
 }

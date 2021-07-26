@@ -1,0 +1,14 @@
+.accent-text {
+	margin: 32px 0;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+	border-left: 4px solid #FFB424;
+	padding-left: 24px;
+}
+
+@include media-breakpoint-down(md) {
+	.accent-text {
+		padding-left: 12px;
+	}
+}

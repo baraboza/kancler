@@ -1,4 +1,5 @@
 import Select from './modules/Select';
+import Swiper from "swiper/bundle";
 
 $(function() {
 	
@@ -10,4 +11,20 @@ $(function() {
 	});
 
 	$('.select').each((i, el) => new Select(el));
+
+	document.querySelectorAll('.reviews').forEach(function(parent) {
+		const swiper = new Swiper(parent.querySelector('.swiper-container'), {
+			threshold: 5,
+			loop: true,
+			autoHeight: true,
+
+			navigation: {
+				prevEl: parent.querySelector('.reviews__prev'),
+				nextEl: parent.querySelector('.reviews__next'),
+			},
+
+			slidesPerView: 1,
+			spaceBetween: 20,
+		});
+	});
 });

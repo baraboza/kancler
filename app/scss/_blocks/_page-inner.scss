@@ -1,0 +1,59 @@
+.page-inner {
+	margin-top: 40px;
+	margin-bottom: 60px;
+
+	&__title {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 55px;
+	}
+
+	&__crumbs {
+		margin-top: 9px;
+
+		li {
+			display: inline;
+
+			&:nth-child(n + 2) {
+
+				&::before {
+					content: ' ∙ ';
+					color: #5d5d64;
+				}
+			}
+
+			&:last-child {
+				color: #5d5d64;
+			}
+		}
+	}
+
+	&__row {
+		margin-top: 42px;
+	}
+}
+
+@include media-breakpoint-down(xl) {
+	.page-inner {
+
+		&__col-side {
+			display: none;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.page-inner {
+		margin-top: 25px;
+		margin-bottom: 30px;
+
+		&__title {
+			font-size: 24px;
+			line-height: 32px;
+		}
+
+		&__row {
+			margin-top: 24px;
+		}
+	}
+}
