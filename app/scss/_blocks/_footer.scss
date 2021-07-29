@@ -1,0 +1,175 @@
+.footer {
+	background: #0050A2;
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+
+	a {
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__row {
+		padding-top: 40px;
+		padding-bottom: 34px;
+	}
+
+	&__col {
+
+		&:nth-child(1) {
+			@include col-width(206 + 69, 1220);
+		}
+
+		&:nth-child(2) {
+			@include col-width(273 + 82, 1220);
+		}
+
+		&:nth-child(3) {
+			@include col-width(79 + 167, 1220);
+		}
+
+		&:nth-child(4) {
+			text-align: right;
+		}
+	}
+
+	&__title,
+	&__contacts {
+		font-weight: 700;
+		font-size: 16px;
+	}
+
+	&__list,
+	&__address {
+		margin-top: 16px;
+	}
+
+	&__list {
+
+		&--columns-2 {
+			columns: 2;
+		}
+	}
+
+	&__contacts {
+		margin-top: 24px;
+	}
+
+	&__socials {
+		margin-top: 22px;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__socials-item {
+
+		&:nth-child(n + 2) {
+			margin-left: 8px;
+		}
+	}
+
+	&__socials-link {
+		@include flex-center;
+		background: #FFFFFF;
+		border-radius: 5px;
+		width: 32px;
+		height: 32px;
+	}
+
+	&__logo {
+		display: inline-block;
+		margin-top: 33px;
+	}
+
+	&__logo-label {
+		margin-top: 12px;
+		line-height: 17px;
+	}
+
+	&__bottom-row {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__bottom-col-left,
+	&__bottom-col-right {
+		flex: 0 0 auto;
+		width: auto;
+	}
+
+	&__bottom-col-left {
+		@include col-width(850, 1220);
+	}
+
+	&__copyright {
+		font-size: 12px;
+		line-height: 21px;
+	}
+
+	&__dev {
+
+		a {
+			text-decoration: underline;
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.footer {
+
+		&__col {
+
+			&:nth-child(n + 1) {
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+
+			&:nth-child(n + 3) {
+				margin-top: 30px;
+			}
+		}
+
+		&__bottom-col-left {
+			flex-basis: 100%;
+			max-width: none;
+		}
+
+		&__dev {
+			margin-top: 10px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.footer {
+
+		&__row {
+			padding-top: 25px;
+			padding-bottom: 20px;
+		}
+
+		&__col {
+
+			&:nth-child(n + 1) {
+				flex-basis: 100%;
+				max-width: none;
+			}
+
+			&:nth-child(n + 2) {
+				margin-top: 25px;
+			}
+
+			&:nth-child(4) {
+				text-align: left;
+			}
+		}
+
+		&__socials {
+			justify-content: flex-start;
+		}
+	}
+}

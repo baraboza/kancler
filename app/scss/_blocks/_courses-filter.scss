@@ -1,0 +1,95 @@
+.courses-filter {
+	background: #0050A2;
+	border-radius: 5px 5px 0px 0px;
+	padding: 23px 20px 25px 23px;
+	margin: 26px 0;
+
+	&__row {
+		margin-left: -6px;
+		margin-right: -6px;
+	}
+
+	&__col {
+		padding-left: 6px;
+		padding-right: 6px;
+
+		&--location {
+			@include col-width(246 + 12, 872);
+		}
+
+		&--age {
+			@include col-width(109 + 12, 872);
+		}
+
+		&--submit {
+			@include col-width(158 + 12, 872);
+		}
+
+		&--grid-cols,
+		&--grid-rows {
+			flex: 0 0 38px;
+		}
+	}
+
+	&__button-submit {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__button-grid-cols,
+	&__button-grid-rows {
+		@include flex-center;
+		width: 38px;
+		height: 38px;
+		border-radius: 5px;
+		border: 1px solid rgba(255, 255, 255, 0.4);
+
+		&.--active {
+			border-color: #fff;
+			background-color: #fff;
+
+			path {
+				fill: #0050A2;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.courses-filter {
+
+		&__col {
+
+			&--location,
+			&--age,
+			&--search {
+				flex: 0 0 33.33333%;
+				max-width: 33.33333%;
+				margin-bottom: 12px;
+			}
+
+			&--submit {
+				flex-basis: auto;
+				max-width: none;
+				width: auto;
+				flex-grow: 1;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.courses-filter {
+		padding: 18px;
+
+		&__col {
+
+			&--location,
+			&--age,
+			&--search {
+				flex-basis: 100%;
+				max-width: none;
+			}
+		}
+	}
+}

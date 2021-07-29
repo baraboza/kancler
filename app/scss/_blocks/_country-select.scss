@@ -1,0 +1,13 @@
+.country-select {
+	max-width: 246px;
+
+	.select {
+		&__button {
+			background: #F5F5F5;
+		}
+	}
+
+	+ .courses-list {
+		margin-top: -4px;
+	}
+}

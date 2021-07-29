@@ -1,0 +1,46 @@
+.courses-list {
+
+	&__item {
+		margin-top: 20px;
+	}
+
+	&__item-box {
+		display: flex;
+		height: 157px;
+		align-items: flex-end;
+		padding: 16px;
+		position: relative;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	&__img-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		img {
+			@include cover;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 72px;
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+		}
+	}
+
+	&__item-title {
+		position: relative;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 19px;
+		color: #fff;
+	}
+}

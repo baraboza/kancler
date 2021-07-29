@@ -1,0 +1,33 @@
+.popular-dest {
+	margin-top: -20px;
+
+	&__item {
+		margin-top: 20px;
+	}
+
+	&__item-box {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		padding: 24px 21px;
+		background: #F5F5F5;
+		border-radius: 5px;
+		transition: background-color 0.3s, color 0.3s;
+
+		img {
+			width: 42px;
+			height: 42px;
+		}
+
+		span {
+			margin-left: 16px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+
+		&:hover {
+			background-color: #0050a2;
+			color: #fff;
+		}
+	}
+}

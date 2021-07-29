@@ -20,9 +20,12 @@
 @import "_blocks/news-card";
 @import "_blocks/text";
 @import "_blocks/checkbox";
+@import "_blocks/pagination";
+@import "_blocks/school-card";
 
 // "крупные" блоки
 @import "_blocks/header";
+@import "_blocks/footer";
 @import "_blocks/main-hero";
 @import "_blocks/main-programs";
 @import "_blocks/main-offers";
@@ -33,3 +36,9 @@
 @import "_blocks/accent-text";
 @import "_blocks/form";
 @import "_blocks/reviews";
+@import "_blocks/country-select";
+@import "_blocks/courses-list";
+@import "_blocks/courses-filter";
+@import "_blocks/schools";
+@import "_blocks/popular-dest";
+@import "_blocks/services-list";

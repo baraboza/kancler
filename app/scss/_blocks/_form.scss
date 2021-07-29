@@ -49,6 +49,11 @@
 			margin-top: 13px;
 		}
 	}
+
+	&__button-submit {
+		width: 257px;
+		height: 38px;
+	}
 }
 
 @include media-breakpoint-down(md) {
