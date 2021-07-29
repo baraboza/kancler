@@ -1,5 +1,13 @@
 .courses-list {
 
+	&:first-child {
+		margin-top: -20px;
+	}
+
+	+ .courses-filter {
+		margin-top: 32px;
+	}
+
 	&__item {
 		margin-top: 20px;
 	}
