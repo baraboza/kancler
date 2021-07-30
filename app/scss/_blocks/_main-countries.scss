@@ -1,0 +1,46 @@
+.main-countries {
+	margin: 60px 0;
+
+	&__list {
+		margin-top: 14px;
+		margin-left: -16px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		margin-top: 16px;
+		margin-left: 16px;
+	}
+
+	&__item-box {
+		display: flex;
+		align-items: center;
+		padding: 13px 16px;
+		font-size: 14px;
+		line-height: 22px;
+		color: #000;
+		background: #F5F6F6;
+		border-radius: 5px;
+		transition: background-color 0.3s, color 0.3s;
+
+		img {
+			margin-right: 8px;
+		}
+
+		&:hover {
+			background: #0050A2;
+			color: #fff;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.main-countries {
+		margin: 40px 0;
+
+		&__list {
+			margin-top: 0;
+		}
+	}
+}

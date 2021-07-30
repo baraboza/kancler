@@ -1,0 +1,19 @@
+.main-numbers {
+	margin: 22px 0;
+	font-size: 14px;
+	line-height: 17px;
+
+	&__list {
+		margin-top: -20px;
+	}
+
+	&__item {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+
+		img {
+			margin-right: 4px;
+		}
+	}
+}

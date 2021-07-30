@@ -1,0 +1,41 @@
+.main-accreds {
+	margin: 60px 0;
+
+	&__slider-wrap {
+		position: relative;
+		margin-top: 24px;
+	}
+
+	&__slider {
+
+		.swiper-slide {
+			width: auto;
+		}
+	}
+
+	&__prev,
+	&__next {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		transform: translate(0, -50%);
+
+		&:disabled {
+			display: none;
+		}
+	}
+
+	&__prev {
+		left: -19px;
+	}
+
+	&__next {
+		right: -19px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.main-accreds {
+		margin: 40px 0;
+	}
+}

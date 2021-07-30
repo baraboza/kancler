@@ -1,0 +1,136 @@
+.main-reviews {
+	background: #F1F8F8;
+
+	&__content {
+		padding-top: 60px;
+		padding-bottom: 83px;
+	}
+
+	&__content {
+		padding-right: 431px;
+		position: relative;
+	}
+
+	&__bg {
+		position: absolute;
+		bottom: 0;
+		right: 19px;
+	}
+
+	&__buttons-list {
+		margin-top: 24px;
+		display: flex;
+	}
+
+	&__buttons-item {
+
+		&:nth-child(n + 2) {
+			margin-left: 12px;
+		}
+	}
+
+	&__button {
+		background-color: transparent;
+		color: #262626;
+
+		path {
+			transition: fill 0.3s;
+		}
+
+		&:hover,
+		&.--active {
+			background: #0050A2;
+			color: #fff;
+
+			path {
+				fill: #fff;
+			}
+		}
+	}
+
+	&__slider {
+		margin-top: 40px;
+	}
+
+	&__item {
+
+		&:nth-child(n + 2) {
+			margin-top: 32px;
+		}
+	}
+
+	&__item-text {
+		font-size: 14px;
+		line-height: 17px;
+		color: #333333;
+	}
+
+	&__author {
+		margin-top: 16px;
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&__author-img-box {
+		@include circle(60px);
+		overflow: hidden;
+
+		img {
+			@include cover;
+		}
+	}
+
+	&__author-text {
+		margin-left: 14px;
+		margin-top: 5px;
+	}
+
+	&__author-name {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&__item-date {
+		font-size: 14px;
+		line-height: 17px;
+		color: #8C8C8C;
+	}
+
+	&__nav-buttons {
+		margin-top: 32px;
+		display: flex;
+	}
+
+	&__prev,
+	&__next {
+		background: #F1F8F8;
+	}
+
+	&__next {
+		margin-left: 8px;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.main-reviews {
+
+		&__content {
+			padding-right: 0;
+		}
+
+		&__bg {
+			display: none;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.main-reviews {
+
+		&__content {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+	}
+}
