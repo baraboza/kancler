@@ -1,0 +1,21 @@
+.school-gallery {
+	margin-top: 32px;
+	margin-bottom: 32px;
+
+	&__list {
+		margin-top: -16px;
+		margin-left: -8px;
+		margin-right: -8px;
+	}
+
+	&__item {
+		margin-top: 16px;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	&__img-box {
+		@include img-box-ratio(math.div(158, 211));
+		@include hover-opacity;
+	}
+}

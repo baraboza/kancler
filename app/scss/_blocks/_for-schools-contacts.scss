@@ -1,0 +1,47 @@
+.for-schools-contacts {
+	margin-top: -5px;
+	margin-bottom: 32px;
+
+	&__button {
+		@include flex-center;
+		height: 64px;
+		background: #FFFFFF;
+		border: 1px solid #EEEEEE;
+		border-radius: 5px;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		transition: 0.3s;
+
+		svg {
+			margin-right: 8px;
+			flex-shrink: 0;
+		}
+
+		path {
+			transition: fill 0.3s;
+		}
+
+		&:hover {
+			background: #0050A2;
+			border-color: #0050A2;
+			color: #fff;
+
+			path {
+				fill: #fff;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.for-schools-contacts {
+
+		&__col {
+			
+			&:nth-child(n + 2) {
+				margin-top: 16px;
+			}
+		}
+	}
+}

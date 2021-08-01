@@ -1,0 +1,45 @@
+.represents {
+
+	&__top-info {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	&__list {
+		margin-top: 4px;
+	}
+
+	&__item {
+		margin-top: 20px;
+	}
+
+	&__item-box {
+		border: 1px solid #E5E5E5;
+		border-radius: 5px;
+		padding: 23px;
+		height: 100%;
+	}
+
+	&__item-title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	&__info-list {
+		margin-top: 24px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	&__info-item {
+		margin-top: 5px;
+		display: flex;
+		align-items: center;
+
+		img {
+			flex-shrink: 0;
+			margin-right: 12px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.agencies-flyers {
+
+	&__col-image {
+		flex: 0 0 305px;
+		max-width: 305px;
+	}
+
+	&__text-title {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	&__text {
+		margin-top: 16px;
+		margin-bottom: 0;
+	}
+
+	&__button {
+		margin-top: 30px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.agencies-flyers {
+
+		&__col-text {
+			margin-top: 20px;
+			flex-basis: 100%;
+		}
+	}
+}

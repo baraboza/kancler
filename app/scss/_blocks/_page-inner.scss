@@ -31,6 +31,14 @@
 	&__row {
 		margin-top: 42px;
 	}
+
+	&__top-link {
+		font-size: 14px;
+		line-height: 22px;
+		color: #0050A2;
+		text-decoration-line: underline;
+		margin-bottom: -16px;
+	}
 }
 
 @include media-breakpoint-down(xl) {

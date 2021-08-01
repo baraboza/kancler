@@ -1,0 +1,19 @@
+.about-advants {
+	margin-top: -20px;
+
+	&__item {
+		margin-top: 26px;
+		display: flex;
+		align-items: flex-start;
+
+		img {
+			flex-shrink: 0;
+		}
+	}
+
+	&__item-text {
+		margin-left: 18px;
+		font-size: 16px;
+		line-height: 22px;
+	}
+}

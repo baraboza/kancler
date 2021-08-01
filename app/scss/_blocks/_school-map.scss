@@ -1,0 +1,30 @@
+.school-map {
+	margin-top: 32px;
+	margin-bottom: 32px;
+
+	&__address {
+		font-size: 16px;
+		line-height: 22px;
+		display: flex;
+		align-items: flex-start;
+
+		img {
+			flex-shrink: 0;
+			margin-right: 8px;
+		}
+	}
+
+	&__box {
+		margin-top: 26px;
+		height: 649px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.school-map {
+
+		&__box {
+			height: 360px;
+		}
+	}
+}
