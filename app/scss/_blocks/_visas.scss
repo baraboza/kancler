@@ -1,0 +1,53 @@
+.visas {
+	margin-top: -20px;
+
+	&__item {
+		margin-top: 20px;
+	}
+
+	&__item-box {
+		display: block;
+		height: 100%;
+		border: 1px solid #EEEEEE;
+	}
+
+	&__img-box {
+		margin-left: -1px;
+		margin-right: -1px;
+		margin-top: -1px;
+		@include img-box-ratio(math.div(204, 285));
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			height: 110px;
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+		}
+	}
+
+	&__item-title {
+		position: absolute;
+		z-index: 1;
+		bottom: 16px;
+		left: 16px;
+		right: 16px;
+		color: #fff;
+		font-family: Roboto, sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&__item-content {
+		flex-grow: 1;
+		padding: 15px;
+	}
+
+	&__item-content-list {
+		font-size: 14px;
+		line-height: 26px;
+	}
+}

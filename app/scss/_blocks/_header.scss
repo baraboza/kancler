@@ -257,6 +257,15 @@
 				}
 			}
 		}
+
+		&__nav-list {
+			display: block;
+			margin: 0;
+		}
+
+		&__nav-sublist {
+			display: none !important;
+		}
 	}
 }
 

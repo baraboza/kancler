@@ -27,4 +27,13 @@ $(function() {
 			spaceBetween: 20,
 		});
 	});
+
+	$('.spoilers__item-head').click(function() {
+		$(this).toggleClass('--active');
+		$(this).next().slideToggle(300);
+	});
+
+	$('.header__toggle').click(function() {
+		$('.header__nav').slideToggle();
+	});
 });

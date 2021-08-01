@@ -1,0 +1,56 @@
+.visa {
+
+	&__table {
+		border: 1px solid #EEEEEE;
+		border-radius: 5px;
+		padding: 23px;
+
+		th, td {
+
+			&:nth-child(n + 2) {
+				padding-left: 12px;
+			}
+		}	
+
+		.table-two-col {
+
+			tr {
+
+				&:nth-child(n + 2) {
+
+					td {
+						padding-top: 40px;
+					}
+				}
+			}
+		}
+	}
+
+	.text {
+
+		a {
+			text-decoration: none;
+		}
+
+		li {
+
+			&:nth-child(n + 2) {
+				margin-top: 22px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.visa {
+
+		&__table {
+			padding: 10px 8px;
+
+			table {
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+	}
+}

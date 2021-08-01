@@ -1,0 +1,83 @@
+.article {
+
+	&__intro-image {
+		flex-basis: 485px;
+		max-width: 485px;
+	}
+
+	.text {
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	&__button-all {
+		margin-top: 8px;
+		width: 167px;
+		height: 38px;
+	}
+
+	&__footer {
+		margin-top: 32px;
+		border-top: 1px solid #EEEEEE;
+		padding-top: 16px;
+	}
+
+	&__footer-row {
+		justify-content: space-between;
+	}
+
+	&__footer-col-next {
+
+		.article__card {
+			text-align: right;
+			align-items: flex-end;
+			margin-left: auto;
+		}
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		max-width: 376px;
+		height: 100%;
+	}
+
+	&__card-title {
+		margin-top: 16px;
+		font-size: 16px;
+		line-height: 24px;
+		color: #0050A2;
+	}
+
+	&__card-date {
+		font-size: 14px;
+		line-height: 17px;
+		margin-top: 5px;
+		color: #5D5D64;
+		margin-bottom: auto;
+	}
+
+	&__card-image {
+		margin-top: 8px;
+		@include img-box-ratio(math.div(124, 183));
+		width: 100%;
+		max-width: 183px;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.article {
+
+		&__intro-image {
+			flex-basis: 100%;
+			max-width: none;
+		}
+
+		&__intro-text {
+			margin-top: 20px;
+		}
+	}
+}

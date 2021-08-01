@@ -5,6 +5,10 @@
 	line-height: 22px;
 	border-left: 4px solid #FFB424;
 	padding-left: 24px;
+
+	a {
+		color: #0050A2;
+	}
 }
 
 @include media-breakpoint-down(md) {

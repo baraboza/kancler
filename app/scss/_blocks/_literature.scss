@@ -1,0 +1,57 @@
+.literature {
+
+	&__list {
+		margin-top: 32px;
+		margin-bottom: 32px;
+	}
+
+	&__item {
+		margin-top: 24px;
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&__item-image {
+		width: 183px;
+		flex-shrink: 0;
+		@include img-box-ratio(math.div(265, 183));
+	}
+
+	&__item-content {
+		margin-left: 20px;
+		font-size: 16px;
+
+		a {
+			color: #0050A2;
+			text-decoration: underline;
+		}
+	}
+
+	&__item-header {
+		line-height: 24px;
+	}
+
+	&__item-link {
+		margin-top: 12px;
+		line-height: 17px;
+	}
+
+	&__item-text {
+		margin-top: 12px;
+		line-height: 22px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.literature {
+
+		&__item {
+			flex-direction: column;
+		}
+
+		&__item-content {
+			margin-top: 15px;
+			margin-left: 0;
+		}
+	}
+}

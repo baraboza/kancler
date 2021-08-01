@@ -1,6 +1,6 @@
 .news-card {
 	display: flex;
-	align-self: flex-start;
+	align-items: flex-start;
 
 	&:hover {
 
@@ -15,6 +15,8 @@
 		@include img-box-ratio(math.div(124, 183));
 		width: 183px;
 		flex-shrink: 0;
+		border-radius: 10px;
+		overflow: hidden;
 	}
 
 	&__content {
@@ -32,6 +34,21 @@
 		font-size: 14px;
 		line-height: 17px;
 		color: #5D5D64;
+	}
+
+	&__descr {
+		font-size: 16px;
+		line-height: 22px;
+		margin-top: 16px;
+	}
+
+	&__more {
+		display: inline-block;
+		margin-top: 15px;
+		font-size: 14px;
+		line-height: 17px;
+		color: #0050A2;
+		text-decoration: underline;
 	}
 }
 

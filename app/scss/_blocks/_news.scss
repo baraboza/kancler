@@ -1,0 +1,20 @@
+.news {
+	margin-top: -24px;
+
+	&__item {
+		margin-top: 24px;
+
+		.news-card {
+
+			&__date,
+			&__descr,
+			&__more {
+				margin-top: 12px;
+			}
+		}
+	}
+
+	&__pagination {
+		margin-top: 32px;
+	}
+}

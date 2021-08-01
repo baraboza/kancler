@@ -1,0 +1,63 @@
+.services-table {
+
+	th {
+		background: #EEEEEE;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&__th-descr {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+	}
+}
+
+.text {
+
+	.services-table {
+
+		.table-two-col {
+			
+			tr {
+
+				&:nth-child(n + 2) {
+
+					td {
+						padding-top: 32px;
+					}
+				}
+			}
+
+			li {
+
+				&:nth-child(n + 2) {
+					margin-top: 17px;
+				}
+			}
+		}
+			
+
+		&__th-descr {
+
+			&:nth-child(n + 2) {
+				margin-top: 8px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.services-table {
+
+		th {
+			font-size: 14px;
+			line-height: 17px;
+		}
+
+		&__th-descr, td {
+			font-size: 12px;
+			line-height: 16px;
+		}
+	}
+}
