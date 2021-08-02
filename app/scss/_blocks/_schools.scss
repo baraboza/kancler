@@ -1,6 +1,105 @@
 .schools {
 	margin-top: 26px;
 
+
+
+	&--rows {
+
+		@include media-breakpoint-up(md) {
+
+			.schools {
+
+				&__list {
+					margin-top: -8px;
+				}
+
+				&__item {
+					margin-top: 8px;
+					flex-basis: 100%;
+					max-width: none;
+				}
+			}
+
+			.school-card {
+				display: flex;
+				border-radius: 4px;
+				border: 1px solid #EEEEEE;
+
+				&__img-box {
+					display: flex;
+					flex-direction: row;
+					padding: 0;
+					height: auto;
+					border-radius: 0;
+
+					&::after {
+						display: none;
+					}
+
+					img {
+						position: static;
+						width: 135px;
+						height: 100%;
+					}
+				}
+
+				&__img-text {
+					color: #262626;
+					margin-left: 32px;
+					margin-top: 11px;
+					margin-bottom: 44px;
+				}
+
+				&__price {
+					top: auto;
+					bottom: 12px;
+					left: 167px;
+					right: auto;
+				}
+
+				&__info-list {
+					margin-left: auto;
+					border: none;
+					display: flex;
+					flex-wrap: wrap;
+					width: 370px;
+				}
+
+				&__info-item {
+					margin-top: 6px;
+
+					&:nth-child(1),
+					&:nth-child(2) {
+						@include col-width(190, 370);
+					}
+
+					&:nth-child(3),
+					&:nth-child(4) {
+						@include col-width(370 - 190, 370);
+					}
+
+					&:nth-child(1),
+					&:nth-child(3) {
+						order: -1;
+						margin-top: 0;
+					}
+				}
+
+				&__info-title {
+					font-size: 11px;
+					text-transform: uppercase;
+				}
+
+				&__info-value {
+					font-weight: 400;
+					margin-top: 2px;
+				}
+			}
+		}
+
+			
+	}
+
 	&__list {
 		margin-top: -20px;
 	}

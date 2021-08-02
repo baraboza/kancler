@@ -36,4 +36,28 @@ $(function() {
 	$('.header__toggle').click(function() {
 		$('.header__nav').slideToggle();
 	});
+
+	$('.courses-filter__button-grid-cols').click(function() {
+		if ($(this).hasClass('--active')) return;
+
+		$('.courses-filter__button-grid-rows').removeClass('--active');
+		$(this).addClass('--active');
+
+		$('.schools')
+			.hide()
+			.removeClass('schools--rows')
+			.fadeIn(300);
+	});
+
+	$('.courses-filter__button-grid-rows').click(function() {
+		if ($(this).hasClass('--active')) return;
+
+		$('.courses-filter__button-grid-cols').removeClass('--active');
+		$(this).addClass('--active');
+
+		$('.schools')
+			.hide()
+			.addClass('schools--rows')
+			.fadeIn(300);
+	});
 });
