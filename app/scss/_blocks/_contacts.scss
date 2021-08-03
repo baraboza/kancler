@@ -3,4 +3,18 @@
 	&__route {
 		margin-top: 24px;
 	}
+
+	&__map {
+		margin-top: 24px;
+		height: 452px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.contacts {
+
+		&__map {
+			height: 350px;
+		}
+	}
 }

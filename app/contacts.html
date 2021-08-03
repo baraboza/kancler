@@ -173,13 +173,35 @@
 							<p>В дневное время припарковать свой автомобиль у офиса непросто, поэтому советуем делать это заранее или приезжать к нам на метро!</p>
 						</div>
 
-						<div class="tabs">
-							<a href="#" class="tabs__button --active">Схема проезда</a>
-							<a href="#" class="tabs__button">Карта</a>
-						</div>
+						<div class="js-tabs-wrap">
+							<div class="tabs">
+								<a href="#tabs-contacts-route" class="tabs__button js-tabs-button">Схема проезда</a>
+								<a href="#tabs-contacts-map" class="tabs__button js-tabs-button">Карта</a>
+							</div>
 
-						<div class="contacts__route">
-							<img src="img/contacts-route.jpg" alt="">
+							<div id="tabs-contacts-route" class="js-tabs-content">
+								<div class="contacts__route">
+									<img src="img/contacts-route.jpg" alt="">
+								</div>
+							</div>
+
+							<div id="tabs-contacts-map" class="js-tabs-content">
+								<div class="contacts__map" id="contacts-map"></div>
+								<script type="text/javascript">
+									let coords = [55.754578, 37.634820];
+									ymaps.ready(init);
+									function init() {
+										let myMap = new ymaps.Map('contacts-map', {
+											center: coords,
+											zoom: 15,
+											controls: []
+										});
+
+										let myPlacemark = new ymaps.Placemark(coords);
+										myMap.geoObjects.add(myPlacemark);
+									}
+								</script>
+							</div>
 						</div>
 
 						<form action="" class="form">

@@ -60,4 +60,25 @@ $(function() {
 			.addClass('schools--rows')
 			.fadeIn(300);
 	});
+
+
+	$('.js-tabs-wrap').each(function(i, el) {
+		const 
+			buttons = $(el).find('.js-tabs-button'),
+			contents = $(el).find('.js-tabs-content');
+
+		buttons.eq(0).addClass('--active');
+		contents.eq(0).fadeIn(300);
+
+		buttons.click(function(e) {
+			e.preventDefault();
+			if ($(this).hasClass('--active')) return;
+
+			buttons.removeClass('--active');
+			contents.hide();
+
+			$(this).addClass('--active');
+			$($(this).attr('href')).fadeIn(300);
+		});
+	});
 });
