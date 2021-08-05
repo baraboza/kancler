@@ -45,6 +45,11 @@
 		height: 100%;
 	}
 
+	&__card-arrow,
+	&__card-title {
+		@include hover-opacity;
+	}
+
 	&__card-title {
 		margin-top: 16px;
 		font-size: 16px;
@@ -65,6 +70,8 @@
 		@include img-box-ratio(math.div(124, 183));
 		width: 100%;
 		max-width: 183px;
+		border-radius: 10px;
+		overflow: hidden;
 	}
 }
 

@@ -33,6 +33,7 @@
 	a {
 		color: #0050A2;
 		text-decoration: underline;
+		@include hover-opacity;
 	}
 
 	table {

@@ -9,6 +9,7 @@
 		font-size: 14px;
 		line-height: 17px;
 		color: #0050A2;
+		@include hover-opacity;
 	}
 
 	&__slider {
@@ -28,6 +29,8 @@
 		@include img-box-ratio(1);
 		width: 95px;
 		flex-shrink: 0;
+		border-radius: 10px;
+		overflow: hidden;
 	}
 
 	&__item-content {
@@ -60,6 +63,7 @@
 		line-height: 17px;
 		color: #0050A2;
 		text-decoration-line: underline;
+		@include hover-opacity;
 	}
 
 	&__buttons {
@@ -70,6 +74,7 @@
 	&__prev,
 	&__next {
 		background: #F1F8F8;
+		@include hover-opacity;
 	}
 
 	&__next {

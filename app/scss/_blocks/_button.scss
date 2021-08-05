@@ -14,10 +14,20 @@
 	transition-property: background-color, border-color, color;
 	transition-duration: 0.3s;
 
+	&:hover {
+		background-color: #2268b1;
+		border-color: #2268b1;
+	}
+
 	&--yellow {
 		background: #FFB424;
 		border-color: #FFB424;
 		color: #262626;
+
+		&:hover {
+			background-color: #ffc34f;
+			border-color: #ffc34f;
+		}
 	}
 
 	&--white {

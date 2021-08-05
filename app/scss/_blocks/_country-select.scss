@@ -5,6 +5,11 @@
 		&__button {
 			background: #F5F5F5;
 			color: #262626;
+			transition: background 0.3s;
+
+			&:hover {
+				background-color: #eee;
+			}
 		}
 	}
 

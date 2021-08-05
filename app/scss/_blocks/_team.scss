@@ -52,6 +52,7 @@
 			line-height: 17px;
 			text-decoration: underline;
 			margin-left: 8px;
+			@include hover-opacity;
 		}
 	}
 }

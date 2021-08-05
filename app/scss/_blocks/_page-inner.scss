@@ -40,6 +40,10 @@
 		color: #0050A2;
 		text-decoration-line: underline;
 		margin-bottom: -16px;
+
+		a {
+			@include hover-opacity;
+		}
 	}
 }
 

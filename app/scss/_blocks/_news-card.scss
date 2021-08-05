@@ -49,6 +49,8 @@
 		line-height: 17px;
 		color: #0050A2;
 		text-decoration: underline;
+
+		@include hover-opacity;
 	}
 }
 

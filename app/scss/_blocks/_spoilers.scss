@@ -17,6 +17,11 @@
 		justify-content: space-between;
 		align-items: center;
 		cursor: pointer;
+		transition: background 0.3s;
+
+		&:hover {
+			background: #eee;
+		}
 
 		svg {
 			margin-left: 15px;

@@ -157,7 +157,9 @@
 		padding: 9px 16px 7px;
 		font-size: 16px;
 		line-height: 22px;
+		transition: background 0.3s;
 
+		&:hover,
 		&.--active {
 			background: #FFB424;
 		}

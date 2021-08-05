@@ -37,6 +37,7 @@
 		font-size: 24px;
 		line-height: 19px;
 		color: #0050A2;
+		@include hover-opacity;
 	}
 
 	&__phone-label {
@@ -53,6 +54,7 @@
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 17px;
+		@include hover-opacity;
 	}
 
 	&__favorites-number {
@@ -68,6 +70,7 @@
 		width: 94px;
 		height: 38px;
 		position: relative;
+		@include hover-opacity;
 	}
 
 	&__search-input {
